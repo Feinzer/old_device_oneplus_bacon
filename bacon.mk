@@ -24,6 +24,8 @@ PRODUCT_PACKAGES += \
     messaging \
     Terminal
 
+LAWNCHAIR_OPTOUT := true
+
 # Audio
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
