@@ -26,7 +26,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=bacon use
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_CMDLINE += androidboot.btmacaddr=00:00:00:00:00:00
 TARGET_KERNEL_CONFIG := bacon_defconfig
-TARGET_KERNEL_SOURCE := kernel/oppo/msm8974
+TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := bacon,A0001
