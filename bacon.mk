@@ -21,7 +21,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 # Custom Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-custom/pixel-colors # Use default pixel colors
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-custom/pixel-colors \
+    $(LOCAL_PATH)/overlay-custom/corner-padding
+    
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 19
