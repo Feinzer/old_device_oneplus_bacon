@@ -23,7 +23,8 @@ DEVICE_PACKAGE_OVERLAYS += \
 # Custom Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-custom/pixel-colors \
-    $(LOCAL_PATH)/overlay-custom/corner-padding
+    $(LOCAL_PATH)/overlay-custom/corner-padding \
+    $(LOCAL_PATH)/overlay-custom/round-corners
     
 
 # Shipping API
