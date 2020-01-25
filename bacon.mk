@@ -15,6 +15,21 @@
 # limitations under the License.
 #
 
+# OpenGapps config
+GAPPS_VARIANT := nano
+
+GAPPS_PRODUCT_PACKAGES += \
+    CalendarGooglePrebuilt \
+    GoogleContacts \
+    GoogleDialer \
+    LatinImeGoogle \
+    PrebuiltExchange3Google \
+    PrebuiltGmail \
+    Wallpapers
+
+GAPPS_FORCE_DIALER_OVERRIDES := true
+GAPPS_FORCE_MMS_OVERRIDES := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
@@ -95,3 +110,6 @@ $(call inherit-product, vendor/oneplus/bacon/bacon-vendor.mk)
 
 # Inherit from msm8974-common
 $(call inherit-product, device/oppo/msm8974-common/msm8974.mk)
+
+# Inherit from OpenGapps
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
